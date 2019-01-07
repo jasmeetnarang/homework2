@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Info</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="checkInfo.js"></script>
+</head>
+<body>
+	<div class = "center wrap">
+		<h1 id ="submitted">User Information</h1>
+		<form onsubmit="checkPassword(event)">
+			<div class ="space">
+				<label for= "UserName"> User Name: </label>
+				<input id ="UserName" type="Name" placeholder="John" required>
+			</div>		
+
+			<div class ="space">
+				<label for = "Email"> Email: </label>
+				<input id ="Email" type="Email" placeholder="your email" required>
+			</div>
+
+			<div class ="space">	
+				<label for = "password"> Password: </label>
+				<!-- <input minlength="5" maxlength="10" id ="password" type="password" placeholder="your password" required> -->
+				<input  pattern=".{5,10}" required title ="password must be between 5 to 10 characters" id ="password" type="password" placeholder="your password" required>
+			</div>
+				<button type="Submit">Submit</button>
+			<div>
+				
+			</div>
+		
+		</form>
+	</div>
+</body>
+</html>

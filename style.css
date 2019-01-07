@@ -1,0 +1,14 @@
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #d3d3d3;
+  padding: 10px;
+  text-align: center;
+}
+
+.space{
+	padding: 10px;
+}
+
+
